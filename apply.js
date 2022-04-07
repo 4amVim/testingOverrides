@@ -25,5 +25,5 @@ setOverriddenFunctions = ( function( _super ) {
 
 	};
 
-} );
+} )( setOverriddenFunctions );
 
