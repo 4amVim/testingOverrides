@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"/>
+</head>
+
+<body>
+<h1>HIIIII</h1>
+
+
+<script>
+
+	let shared = document.createElement( 'script' );
+	shared.src = 'shared.js';
+
+	shared.addEventListener( 'load', function() {
+
+		let apply = document.createElement( 'script' );
+		apply.src = '/apply.js';
+		console.log( 'Apply loaded in' );
+
+		document.querySelector( 'body' ).appendChild( apply );
+
+	} );
+
+
+	document.querySelector( 'body' ).appendChild( shared );
+	console.log( 'Shared loaded in' );
+</script>
+
+
+</body>
+
+</html>
